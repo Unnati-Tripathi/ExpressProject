@@ -16,7 +16,8 @@ connectDB()
     app.on("error", (error)=>{
         console.log("Error" , error);
         throw error;
-    })
+    }) //agar app na connect hua ho sahi se..
+    
     app.listen(process.env.PORT || 8000 , ()=>{
         console.log(`server is running on : ${process.env.PORT}`);
     })
